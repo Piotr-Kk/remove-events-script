@@ -22,7 +22,8 @@ def buildServiceConnection():
         creds = tools.run_flow(flow, store)
     service = build('calendar', 'v3', http=creds.authorize(Http()))
     return service
-
+    
+    
 def getLastEventDate(eventName):
     today = datetime.datetime.utcnow()
     pastThreeWeeks = today + datetime.timedelta(weeks=-3)
