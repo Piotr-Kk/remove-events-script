@@ -8,7 +8,7 @@ import datetime
 import json
 import sys
 
-CALENDAR_ID = 'piotr.korczyk66@gmail.com'
+CALENDAR_ID = 'xxx@gmail.com'
 EVENT_NAME = 'issue call'
 # to do: add requirment pip install, configure moto account
 
