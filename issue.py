@@ -1,5 +1,3 @@
-# Copyright by Piotr Korczyk
-
 from __future__ import print_function
 from apiclient.discovery import build
 from httplib2 import Http
@@ -9,9 +7,8 @@ import json
 import time
 
 
-CALENDAR_ID = 'piotr.korczyk66@gmail.com'
-EVENT_NAME = 'issue call'
-# to do: add requirment pip install, configure moto account
+CALENDAR_ID = 'xxx@gmail.com'
+EVENT_NAME = 'xxx'
 
 def buildServiceConnection():
     SCOPES = 'https://www.googleapis.com/auth/calendar'
@@ -48,7 +45,7 @@ def getLastEventDate(eventName):
         print('Cant find any '+eventName+' from last 3 weeks!')
         return 0
     print('Datetime of last '+EVENT_NAME+' (in local time): '+str(lastEvent['end']['dateTime']))
-    return lastEvent['end']['dateTime'] # return date in LOCAL TIME, NO UTC !!! 
+    return lastEvent['end']['dateTime'] 
     
 
 
