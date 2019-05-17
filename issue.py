@@ -7,7 +7,7 @@ import json
 import time
 
 
-CALENDAR_ID = 'xxx@gmail.com'
+CALENDAR_ID = 'xxx@xxx.com' 
 EVENT_NAME = 'xxx'
 
 def buildServiceConnection():
